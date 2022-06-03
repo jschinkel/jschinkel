@@ -89,6 +89,7 @@ a {
 }
 
 .menu-item.l {
+  margin-bottom: 5px;
   margin-left: 10px;
   padding-right: 2px;
   padding-left: 2px;
