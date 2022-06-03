@@ -101,12 +101,12 @@ a {
 
 .menu-text {
   display: inline-block;
-  margin-right: 5px;
   font-size: 15px;
   line-height: 18px;
 }
 
 .menu-text.nope {
+  margin-left: 5px;
   font-style: italic;
 }
 
