@@ -147,7 +147,6 @@ a {
 .block {
   position: absolute;
   max-width: 60%;
-  box-shadow: 0 0 18px -12px #f9ecff;
   opacity: 0;
   -webkit-transition: opacity 450ms ease;
   transition: opacity 450ms ease;
