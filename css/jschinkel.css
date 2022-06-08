@@ -86,7 +86,7 @@ a {
   padding-left: 2px;
   background-color: #f9ecff;
   color: #342e36;
-  cursor: auto;
+  cursor: default;
 }
 
 .menu-item.static:hover {
