@@ -151,9 +151,10 @@ a {
   display: none;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
   -webkit-transition: opacity 450ms ease;
   transition: opacity 450ms ease;
+  background-color: black;
+  opacity: 0;
 }
 
 .block.vis {
