@@ -4,9 +4,7 @@ body {
   color: #f9ecff;
   font-size: 16px;
   line-height: 20px;
-  max-width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
+  font-weight: 500;
 }
 
 a {
@@ -14,7 +12,7 @@ a {
 }
 
 .sec-main {
-  overflow: hidden;
+  overflow: auto;
   max-height: 100vh;
   min-height: 100vh;
   -webkit-box-pack: center;
@@ -32,21 +30,15 @@ a {
 }
 
 .menu {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
+  position: absolute;
   z-index: 5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   overflow: auto;
-  width: 100vw;
   height: auto;
-  max-width: 100vw;
-  padding: 30px 50px;
+  padding: 25px 50px 30px 25px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -63,11 +55,8 @@ a {
 }
 
 .menu-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
+  position: relative;
+  padding: 5px 8px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -77,7 +66,8 @@ a {
 }
 
 .menu-item:hover {
-  color: #acacac;
+  background-color: #201922;
+  mix-blend-mode: normal;
 }
 
 .menu-item.drop {
@@ -96,11 +86,14 @@ a {
 .menu-item.l {
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 10px;
-  padding: 5px;
-  background-color: #f9ecff;
-  color: #342e36;
+  margin-left: 8px;
+  padding: 3px 0px 0px;
+  border-bottom: 1px solid #f9ecff;
   cursor: auto;
+}
+
+.menu-item.l:hover {
+  background-color: transparent;
 }
 
 .menu-item.static:hover {
@@ -115,13 +108,20 @@ a {
 
 .menu-text {
   display: inline-block;
-  margin-right: 5px;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 .menu-text.nope {
   font-style: italic;
+}
+
+.menu-text.web {
+  font-size: 9px;
+}
+
+.menu-text.design {
+  font-size: 9px;
 }
 
 .blocks {
@@ -136,7 +136,6 @@ a {
   display: flex;
   overflow: hidden;
   max-width: 100vw;
-  padding-top: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -149,18 +148,70 @@ a {
 
 .block {
   position: absolute;
-  max-width: 60%;
+  display: none;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
   -webkit-transition: opacity 450ms ease;
   transition: opacity 450ms ease;
 }
 
 .block.vis {
+  display: block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 1;
 }
 
 .sym {
   font-size: 10px;
+}
+
+.block-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.text-sm {
+  display: inline-block;
+  margin-right: 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-size: 9px;
+  line-height: 9px;
+}
+
+.text-sm.nope {
+  font-style: italic;
+}
+
+.blockvid {
+  width: 100%;
+  height: 100%;
+}
+
+.block-info {
+  position: absolute;
+  left: auto;
+  top: 25px;
+  right: 25px;
+  bottom: auto;
+  z-index: 10;
+  mix-blend-mode: difference;
+}
+
+.text-block {
+  font-size: 13px;
+  line-height: 15px;
 }
 
 @media screen and (max-width: 991px) {
