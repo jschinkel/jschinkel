@@ -148,16 +148,6 @@ a {
 
 .block {
   position: absolute;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  -webkit-transition: opacity 450ms ease;
-  transition: opacity 450ms ease;
-  background-color: black;
-  opacity: 0;
-}
-
-.block.vis {
   display: block;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -167,6 +157,15 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: opacity 450ms ease;
+  transition: opacity 450ms ease;
+  background-color: black;
+  opacity: 0;
+}
+
+.block.vis {
   opacity: 1;
 }
 
