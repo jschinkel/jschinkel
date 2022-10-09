@@ -236,8 +236,7 @@ a {
   }
 
   .block {
-    width: 100%;
-    max-width: none;
+    visibility: none;
   }
 }
 
