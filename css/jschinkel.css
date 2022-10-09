@@ -74,6 +74,10 @@ a {
   mix-blend-mode: normal;
 }
 
+.menu-item.title:hover {
+  background-color: transparent;
+}
+
 .menu-item.drop {
   text-decoration: underline;
   cursor: auto;
