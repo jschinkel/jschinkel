@@ -236,7 +236,7 @@ a {
   }
 
   .block {
-    visibility: none;
+    display: none;
   }
 }
 
