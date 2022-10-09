@@ -75,7 +75,7 @@ a {
 }
 
 .menu-item.title:hover {
-  background-color: transparent;
+  background-color: transparent; !important
 }
 
 .menu-item.drop {
