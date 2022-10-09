@@ -65,6 +65,10 @@ a {
   cursor: pointer;
 }
 
+.menu-item.title {
+  cursor: default; !important
+}
+
 .menu-item:hover {
   background-color: #201922;
   mix-blend-mode: normal;
